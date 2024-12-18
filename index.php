@@ -31,7 +31,7 @@ if (isset($_GET['id'])) {
     <script src="./assets/js/frissbee-audio-player_1.0.3.js"></script>
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="assets/css/page-o-builder.editor.v0.1.0.min.css" />
+    <link rel="stylesheet" href="assets/css/page-o-builder.editor.v0.1.1.min.css" />
   </head>
   <body>
     <main>
@@ -113,7 +113,7 @@ if (isset($_GET['id'])) {
   </script>
 
   <!-- page builder & own JS -->
-  <script src="./assets/js/page-o-builder.editor.v0.1.0.min.js"></script>
+  <script src="./assets/js/page-o-builder.editor.v0.1.1.min.js"></script>
   <script src="./assets/js/my-script.js"></script>
 
   <script>

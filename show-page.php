@@ -31,7 +31,7 @@ $contentPage = $statement->fetch()['contentPage'];
     <script src="./assets/js/show-page.js" defer></script>
 
     <!-- the page-o-builder JS file -->
-    <script src="assets/js/page-o-builder.show-page.v0.1.0.js" defer></script>
+    <script src="assets/js/page-o-builder.show-page.v0.1.1.js" defer></script>
   </head>
   <body>
     <main>
