@@ -63,10 +63,11 @@ if (isset($_GET['id'])) {
         <!-- The attributes -->
         <!-- container:           for YOUR container CSS class (here an example with bootstrap) -->
         <!-- output:              class name or id of the output / preview HTML element  -->
+        <!-- is-light-box:        If the fancybox is implemented, the attribute "is-light-box" must be specified -->
         <!-- is-frissbee-player:  If the FrissBee Player is implemented, the attribute "is-frissbee-player" must be specified -->
         <!-- no-data:             When a new page is created (meaning no data is loaded) the attribute "no-data" must be set -->
         <div class="px-2">
-          <page-o-builder container="container" output=".preview-output" is-frissbee-player <?= $id === false ? 'no-data' : '' ?>></page-o-builder>
+          <page-o-builder container="container" output=".preview-output" is-light-box is-frissbee-player <?= $id === false ? 'no-data' : '' ?>></page-o-builder>
         </div>
         <!-- the output / preview HTML element -->
         <!-- Note: "display: none" must be set. The other CSS style is optional. -->
