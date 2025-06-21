@@ -6,7 +6,7 @@ date_default_timezone_set('Europe/Berlin');
 
 // local
 define('DB_HOST', 'localhost'); // => here your HOST NAME
-define('DB_NAME', 'page_builder');  // here your DATABASE NAME
+define('DB_NAME', 'page_o_builder');  // here your DATABASE NAME
 define('DB_USER', 'root');  // here your USER NAME
 define('DB_PASSWORD', '');  // here your PASSWORD
 

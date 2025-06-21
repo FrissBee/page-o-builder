@@ -1,0 +1,25 @@
+/**
+* For the global style of the accordion, implement the CSS here with "::part()".
+* See the documentation at: https://github.com/FrissBee/accordion
+*
+* Here is an example: */
+
+/* frissbee-accordion::part(container-accordion) {
+  margin-bottom: 8px;
+  border: 8px solid #fff;
+  border-radius: 8px;
+}
+frissbee-accordion::part(btn-title) {
+  font-family: 'Segoe UI';
+  color: #fff;
+  background-color: #3c91c9;
+  font-size: 22px;
+  padding: 4px 22px;
+  font-weight: bold;
+}
+frissbee-accordion::part(container-panel) {
+  background-color: #f0f0f0;
+}
+frissbee-accordion::part(panel-accordion) {
+  padding: 8px 20px;
+} */

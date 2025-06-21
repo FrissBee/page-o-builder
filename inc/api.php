@@ -7,9 +7,8 @@ $received_data = json_decode(file_get_contents("php://input"));
 if ($received_data->action === 'get-content-editor') {
   $id = $received_data->id;
 
-  $query = "SELECT id, contentEditor FROM contents WHERE id = :id;";
+  $query = "SELECT id, contentEditor, `name` FROM contents WHERE id = :id;";
   $data = [ 'id' => $id ];
-
   $statement = $db->prepare($query);
   $statement->execute($data);
   $result = $statement->fetch();
@@ -23,9 +22,10 @@ else if ($received_data->action === 'insert-data-from-page-builder') {
   $data = [
     "contentEditor" => $received_data->contentEditor,
     "contentPage" => $received_data->contentPage,
+    "name" => $received_data->name,
   ];
 
-  $query = "INSERT INTO contents SET contentEditor = :contentEditor, contentPage = :contentPage;";
+  $query = "INSERT INTO contents SET contentEditor = :contentEditor, contentPage = :contentPage, name = :name;";
   $statement = $db->prepare($query);
   $statement->execute($data);
   $statement->fetch();
@@ -40,9 +40,10 @@ else if ($received_data->action === 'save-data-from-page-builder') {
   $data = [
     "contentEditor" => $received_data->contentEditor,
     "contentPage" => $received_data->contentPage,
+    "name" => $received_data->name,
   ];
 
-  $query = "UPDATE contents SET contentEditor = :contentEditor, contentPage = :contentPage WHERE id = $id;";
+  $query = "UPDATE contents SET contentEditor = :contentEditor, contentPage = :contentPage, name = :name WHERE id = $id;";
   $statement = $db->prepare($query);
   $statement->execute($data);
   $result = $statement->fetch();

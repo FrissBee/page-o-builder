@@ -1,0 +1,51 @@
+/**
+* For the global style of the little-image-viewer, implement the CSS here with "::part()".
+* See the documentation at: https://github.com/FrissBee/little-image-viewer
+*
+* Here is an example: */
+
+/*
+little-image-viewer::part(container-viewer) {
+  padding: 20px;
+  background-color: rgb(51, 51, 51);
+  border: 8px solid green;
+}
+little-image-viewer::part(image) {
+  border: 4px solid rgb(38, 144, 185);
+  border-radius: 28px;
+}
+little-image-viewer::part(container-icon-left),
+little-image-viewer::part(container-icon-right) {
+  padding: 10px 0;
+  border: 2px solid rgb(226, 73, 13);
+  border-radius: 8px;
+  background-color: rgb(255, 246, 203);
+}
+little-image-viewer::part(svg-icon-left),
+little-image-viewer::part(svg-icon-right) {
+  padding: 6px 4px 0;
+  height: 60px;
+  width: 30px;
+}
+little-image-viewer::part(title) {
+  color: #fff;
+  padding: 0 0 8px;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: italic;
+}
+little-image-viewer::part(sub-title) {
+  color: #ecdf1f;
+  padding: 8px 0 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+little-image-viewer::part(title-link) {
+  color: red;
+}
+little-image-viewer::part(title-link):hover {
+  color: green;
+}
+*/
