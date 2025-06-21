@@ -11,8 +11,7 @@
 
   // =========================
   // 	LETs & CONSTs
-  const baseUrl = 'http://localhost/___FrissBee/___FrissBee%20-%20Subs/page-o-builder/';
-  // const baseUrl = 'https://page-o-builder.frissbee.de/demo';
+  const baseUrl = 'HERE YOUR PATH'; // for example: http://localhost/page-o-builder/
   const searchPara = '?id=';
   let idContents = 0;
 
