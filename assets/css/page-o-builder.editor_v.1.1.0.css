@@ -1830,7 +1830,6 @@ blockquote {
   position: relative;
   border-radius: 0 0 4px 4px;
   color: #000;
-  height: 100%;
 }
 
 .pob-edit-section {
@@ -1888,8 +1887,9 @@ blockquote {
 
 .pob-textarea-html {
   height: 160px;
-  width: -webkit-fill-available;
   resize: vertical;
+  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .pob-iframe-container {

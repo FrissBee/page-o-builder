@@ -11,7 +11,7 @@
 
   // =========================
   // 	LETs & CONSTs
-  const baseUrl = 'HERE YOUR PATH'; // for example: http://localhost/page-o-builder/
+  const baseUrl = 'http://localhost/page-o-builder/'; // => here your path
   const searchPara = '?id=';
   let idContents = 0;
 
