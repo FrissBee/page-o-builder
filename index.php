@@ -28,7 +28,7 @@ $presets = $statement->fetchAll();
     />
 
     <!-- CSS for the Page Builder  -->
-    <link rel="stylesheet" href="./assets/css/page-o-builder.editor_v.1.1.0.min.css" />
+    <link rel="stylesheet" href="./assets/css/page-o-builder.editor_v.1.2.0.min.css" />
 
     <!-- optional: fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -150,7 +150,7 @@ $presets = $statement->fetchAll();
   </script>
 
   <!-- page builder  -->
-  <script src="./assets/js/page-o-builder.editor_v.1.1.0.min.js"></script>
+  <script src="./assets/js/page-o-builder.editor_v.1.2.0.min.js"></script>
   <!-- own JavaScript -->
   <script src="./assets/js/my-script.js"></script>
 
