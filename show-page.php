@@ -31,8 +31,8 @@ if ($contentPage === NULL) {
     <script src="assets/js/page-o-builder.show-page_v.1.0.0.js" defer></script>
 
     <!-- optional: fancybox -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
 
     <!-- optional: FrissBee Audio Player -->
     <script src="./assets/js/frissbee-audio-player_v.1.0.4.js"></script>
@@ -64,6 +64,13 @@ if ($contentPage === NULL) {
     Fancybox.bind('[data-fancybox]', {
         // Your custom options
         // see: https://fancyapps.com/fancybox/api/options/
+
+        // no autoplay by videos
+        Carousel: {
+          Video: {
+            autoplay: false,
+          },
+        },
       });
   </script>
 

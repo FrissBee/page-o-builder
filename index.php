@@ -31,8 +31,8 @@ $presets = $statement->fetchAll();
     <link rel="stylesheet" href="./assets/css/page-o-builder.editor_v.1.2.0.min.css" />
 
     <!-- optional: fancybox -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
 
     <!-- optional: FrissBee Audio Player -->
     <script src="./assets/js/frissbee-audio-player_v.1.0.4.js"></script>
@@ -94,13 +94,14 @@ $presets = $statement->fetchAll();
         the HTML for the page builder
 
         The attributes
-        container:               for YOUR container CSS class (here an example with bootstrap)
-        output:                  class name or id of the output / preview HTML element
-        is-light-box:            If the fancybox is implemented, the attribute "is-light-box" must be specified
-        is-frissbee-player:      If the FrissBee Player is implemented, the attribute "is-frissbee-player" must be specified
-        is-accordion:            If the FrissBee Accordion is implemented, the attribute "is-accordion" must be specified
-        is-little-image-viewer:  If the Little Image Viewer is implemented, the attribute "is-little-image-viewer" must be specified
-        no-data:             When a new page is created (meaning no data is loaded) the attribute "no-data" must be set
+        container:                for YOUR container CSS class (here an example with bootstrap)
+        output:                   class name or id of the output / preview HTML element
+        is-light-box:             If the fancybox is implemented, the attribute "is-light-box" must be specified
+        is-frissbee-player:       If the FrissBee Player is implemented, the attribute "is-frissbee-player" must be specified
+        is-accordion:             If the FrissBee Accordion is implemented, the attribute "is-accordion" must be specified
+        is-little-image-viewer:   If the Little Image Viewer is implemented, the attribute "is-little-image-viewer" must be specified
+        no-data:                  When a new page is created (meaning no data is loaded) the attribute "no-data" must be set
+        choose-language:          Default = 'en'; values: 'en' and 'de'
          -->
         <div class="px-2">
           <!-- Implement the "page-o-builder" tag. Set the attribute "no-data"  -->
@@ -159,6 +160,13 @@ $presets = $statement->fetchAll();
     Fancybox.bind('[data-fancybox]', {
         // Your custom options
         // see: https://fancyapps.com/fancybox/api/options/
+
+        // no autoplay by videos
+        Carousel: {
+          Video: {
+            autoplay: false,
+          },
+        },
       });
   </script>
 
