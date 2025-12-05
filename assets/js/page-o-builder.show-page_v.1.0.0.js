@@ -1,1 +1,0 @@
-"use strict";(()=>{const e=document.querySelectorAll(".pob-container-screen-resize-wgstzux"),d=document.querySelector("body"),o=[],t=(e.forEach(e=>{o.push(e.style.width)}),()=>{e.forEach((e,t)=>{d.offsetWidth<=1030?e.style.width="100%":e.style.width=o[t]})});window.addEventListener("resize",e=>{t()}),window.addEventListener("DOMContentLoaded",e=>{t()})})();
